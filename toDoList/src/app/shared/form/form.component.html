@@ -1,0 +1,88 @@
+<div class="formbold-main-wrapper">
+  <div class="formbold-form-wrapper">
+    <h3>Create to do</h3>
+    <br>
+    <form >
+      <div class="formbold-input-group">
+        <label for="name" class="formbold-form-label"> Id </label>
+        <input
+          type="number"
+          name="id"
+          id="id"
+          class="formbold-form-input"
+        />
+      </div>
+      <div class="formbold-input-group">
+        <label for="name" class="formbold-form-label"> Title </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="formbold-form-input"
+        />
+      </div>
+
+      <div class="formbold-input-group">
+        <label for="description" class="formbold-form-label"> Descripción </label>
+        <textarea
+          rows="6"
+          name="message"
+          id="message"
+          class="formbold-form-input"
+        ></textarea>
+      </div>
+
+      <div class="formbold-input-group">
+        <label class="formbold-form-label">
+          Prioridad
+        </label>
+
+        <select class="formbold-form-select" name="occupation" id="occupation">
+          <option value="Student">alta</option>
+          <option value="designer">media</option>
+          <option value="fullstack">baja</option>
+        </select>
+      </div>
+
+      <div class="formbold-input-radio-wrapper">
+        <label for="ans" class="formbold-form-label">
+         Estado
+        </label>
+
+        <div class="formbold-radio-flex">
+          <div class="formbold-radio-group">
+            <label class="formbold-radio-label">
+              <input
+                class="formbold-input-radio"
+                type="radio"
+                name="ans"
+                id="ans"
+              />
+              Pendiente
+              <span class="formbold-radio-checkmark"></span>
+            </label>
+          </div>
+
+          <div class="formbold-radio-group">
+            <label class="formbold-radio-label">
+              <input
+                class="formbold-input-radio"
+                type="radio"
+                name="ans"
+                id="ans"
+              />
+             Hecha
+              <span class="formbold-radio-checkmark"></span>
+            </label>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+      <button class="btn-submit">Submit</button>
+    </form>
+  </div>
+</div>

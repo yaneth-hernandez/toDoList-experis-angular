@@ -1,0 +1,27 @@
+
+<table class="default">
+
+  <h3>To do List</h3>
+
+  <tr>
+
+    <th>Id</th>
+    <th>Título</th>
+    <th>Descripción</th>
+    <th>Proridad</th>
+    <th>Estatus</th>
+
+  </tr>
+
+  <tr *ngFor="let toDo of toDoList" #rowTask>
+
+    <td>{{toDo.id}}</td>
+
+    <td>{{toDo.title}}</td>
+
+    <td>{{toDo.description}}</td>
+    <td #priorityItem >{{toDo.priority}}</td>
+    <td #statusItem >{{toDo.status}}</td>
+
+  </tr>
+</table>
