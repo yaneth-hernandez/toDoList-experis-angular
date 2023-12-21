@@ -13,9 +13,12 @@ import { ToDoListService } from 'src/app/services/toDoList.service';
 export class FormComponent implements OnInit {
 
   validateForm!: FormGroup;
+
   constructor
-  (private formBuilder: FormBuilder,
-  private toDoListService:ToDoListService) { }
+  (
+    private formBuilder: FormBuilder,
+    private toDoListService:ToDoListService
+  ) { }
 
   ngOnInit() {
     this.validateForm = this.formBuilder.group({
@@ -28,8 +31,14 @@ export class FormComponent implements OnInit {
   }
 
   submit(){
-    console.log(this.validateForm.value)
+console.log(this.validateForm.value)
     this.toDoListService.addItem(this.validateForm.value)
   }
 
 }
+
+
+//Ngx y RxJS
+//https://angular.io/guide/rx-library
+//https://dominicode.com/que-es-ngxs/
+

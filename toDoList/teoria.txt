@@ -1,0 +1,7 @@
+21/12/2023
+ViewChild: Herencia de datos
+
+Desde el componente padre:
+@ViewChild(childComponent) childComponent: ChildComponent
+
+

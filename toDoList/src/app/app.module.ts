@@ -7,13 +7,16 @@ import { AppComponent } from './app.component';
 import { ViewComponent } from './view/view.component';
 import { FormComponent } from './shared/form/form.component';
 import { TaskListComponent } from './shared/TaskList/TaskList.component';
+import { HeaderComponent } from './shared/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ViewComponent,
+    HeaderComponent,
     FormComponent,
-    TaskListComponent
+    TaskListComponent,
+
   ],
   imports: [
     BrowserModule,
