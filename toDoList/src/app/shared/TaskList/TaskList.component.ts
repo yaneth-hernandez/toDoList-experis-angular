@@ -28,8 +28,6 @@ export class TaskListComponent implements OnInit, AfterViewInit {
     this.toDoListService
       .getToDoList()
       .subscribe((toDos) => (this.toDoList = toDos));
-
-
   }
 
   ngAfterViewInit(): void {
@@ -53,6 +51,12 @@ export class TaskListComponent implements OnInit, AfterViewInit {
       }
     });
   }
+
+  deleteItem(toDo: ToDoList) {
+    this.toDoList = this.toDoList.filter((itemToDo) => itemToDo != toDo);
+  }
+
+
 }
 
 // switch(element.priority){

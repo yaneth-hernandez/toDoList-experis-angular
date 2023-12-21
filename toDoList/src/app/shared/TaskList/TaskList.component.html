@@ -10,6 +10,7 @@
     <th>Descripción</th>
     <th>Proridad</th>
     <th>Estatus</th>
+    <th>Acciones</th>
 
   </tr>
 
@@ -22,6 +23,11 @@
     <td>{{toDo.description}}</td>
     <td #priorityItem >{{toDo.priority}}</td>
     <td #statusItem >{{toDo.status}}</td>
-
+<td>
+  <button ><img src="../../../assets/pencil-fill.svg" alt=""></button>
+  <button (click)="deleteItem(toDo)"><img src="../../../assets/trash3-fill.svg" alt=""></button>
+</td>
   </tr>
 </table>
+
+<!-- (click)="editItem(toDo.id)" -->

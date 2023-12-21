@@ -5,3 +5,8 @@ export interface ToDoList {
   priority: string;
   status: boolean;
 }
+
+/**
+ * Data transfer Object
+ */
+export interface EditToDoItem extends Omit<ToDoList, 'id'|'priority'|'status'>{}
