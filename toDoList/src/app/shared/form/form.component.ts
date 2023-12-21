@@ -41,4 +41,4 @@ console.log(this.validateForm.value)
 //Ngx y RxJS
 //https://angular.io/guide/rx-library
 //https://dominicode.com/que-es-ngxs/
-
+//https://www.syncfusion.com/blogs/post/angular-state-management-ngrx.aspx
